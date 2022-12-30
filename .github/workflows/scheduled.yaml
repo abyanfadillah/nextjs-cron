@@ -2,6 +2,7 @@ name: hourly-cron-job
 on:
   schedule:
     - cron: '*/1 * * * *'
+  workflow_dispatch:
 jobs:
   cron:
     runs-on: ubuntu-latest
